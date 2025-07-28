@@ -1,0 +1,41 @@
+[
+    {
+        "HealthCareUnit_ID": 5200589,
+        "Name": "Demo Health Care Unit 1",
+        "Address1": "abc",
+        "Address2": "temp Road",
+        "City": "XYZ",
+        "PostCode": "Sd 5AG",
+        "Phone1": "016150725989",
+        "Phone2": "", 
+        "Fax": "33454",
+        "Email": "info@example.com",
+        "GUID": "a1c2d3e4-f5a6-7b8c-9d0e-f1a2b3c4d5e3"
+    },
+    {
+        "HealthCareUnit_ID": 5200590,
+        "PracticeName": "Demo Health Care Unit 2",
+        "Address1": "abc",
+        "Address2": "temp Road",
+        "City": "XYZ",
+        "PostCode": "Sd 5AG",
+        "Phone1": "016150725989",
+        "Phone2": "", 
+        "Fax": "33454",
+        "Email": "info@example.com",
+         "GUID": "a2c3d4e5-f6a7-8b9c-0d1e-f2a3b4c5d6e4"
+    },
+    {
+        "HealthCareUnit_ID": 5200591,
+        "PracticeName": "Demo Health Care Unit 3",
+        "Address1": "abc",
+        "Address2": "temp Road",
+        "City": "XYZ",
+        "PostCode": "Sd 5AG",
+        "Phone1": "016150725989",
+        "Phone2": "",    
+        "Fax": "33454",
+        "Email": "info@example.com",
+        "GUID": "a3c4d5e6-f7a8-9b0c-1d2e-f3a4b5c6d7e5"
+    }
+]
