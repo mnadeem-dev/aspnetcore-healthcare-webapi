@@ -70,7 +70,7 @@ try
         {
             options.TokenValidationParameters = new TokenValidationParameters
             {
-                // �� issuer 
+                //  issuer 
                 ValidateIssuer = true,
                 ValidIssuer = GlobalAppSettings.Issuer,
                 // -- audience 
@@ -221,8 +221,8 @@ try
     app.UseCors("AllowFrontend");
     var apiVersionDescriptionProvider = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
   
-    if (app.Environment.IsDevelopment())
-    {
+   // if (app.Environment.IsDevelopment())
+   // {
         //app.MapOpenApi();
         app.UseSwagger();
         app.UseSwaggerUI(options =>
@@ -234,7 +234,7 @@ try
         });       
         // Enable PII logging
         //IdentityModelEventSource.ShowPII = true;
-    }   
+  //  }   
     app.UseMiddleware<ExceptionMiddleware>();  // Use Global custom middleware for exception handling
     // Log Request Time: i.e.,  Add Middleware Logging in ASP.NET Core
     app.Use(async (context, next) =>
