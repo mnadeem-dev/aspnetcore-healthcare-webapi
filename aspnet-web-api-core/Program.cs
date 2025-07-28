@@ -70,7 +70,7 @@ try
         {
             options.TokenValidationParameters = new TokenValidationParameters
             {
-                //  issuer 
+                // issuer 
                 ValidateIssuer = true,
                 ValidIssuer = GlobalAppSettings.Issuer,
                 // -- audience 
