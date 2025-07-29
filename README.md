@@ -44,14 +44,14 @@ A scalable Web API Application built using **ASP.NET Core 9** and **Clean Archit
 
 - [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download)
 - [Visual Studio 2022+](https://visualstudio.microsoft.com/)
-- Nuget Packages
+- Restoring NuGet packages
 
 ### Run Locally
 
-- Download & Open the project using Visual Studio.
+- Download & Launch the AspNetWebApiCore.sln using Visual Studio 2022+.
 - Update JWT Users & JWT Settings in appsettings.json (Optional)
-- Install Nuget Packages being used in this project:
-    - Go to Tools >> Nuget Package Manager >> Manage Nuget Packages Solution
+- Restore NuGet Packages as:
+    - Tools >> Nuget Package Manager >> Manage Nuget Packages Solution
 - Clean and build the solution
 - Run the project:
     - From Visual Studio toolbar, Select "Debug", "Any CPU" and "IIS Express" Options
@@ -62,25 +62,31 @@ A scalable Web API Application built using **ASP.NET Core 9** and **Clean Archit
 https://localhost:{port}/swagger/index.html
 ```
 ### Test APIs in Swagger
-- Create API Token:
- - Expand the Auth controller, and then expand "/v{version}/auth/login" end point
- - Click the button "Try Out", it will allow you to enter the param
- - Enter value 1 in Version* textbox
- - In Request Body Section, Select "application/json" and enter the following User json schema (Key,User, Password)
+- Create Patient API Token:
+    - Expand the Auth controller, and then expand "/v{version}/auth/login" end point
+    - Click the button "Try it Out", it will allow you to enter the params
+    - Enter value 1 in Version* textbox
+    - In Request Body Section, Select "application/json" and enter the following User json schema (Key,User, Password)
  
- ```
- {
-  "ClientKey": "b1c2d3e4-f5a6-7b8c-9d0e-f1a2b3c4d5e6",
-  "Username": "User1",
-  "Password": "User1Password"
-}
- ```
+      ```
+      {
+        "ClientKey": "b1c2d3e4-f5a6-7b8c-9d0e-f1a2b3c4d5e6",
+        "Username": "User1",
+        "Password": "User1Password"
+      }
 
- - Clicking on execute button, should create API token. You can use this token to test other APIs related to this User Role.
+      ```
+    - Clicking on execute button, should create API token. You can use this token to test other APIs related to this User Role.
 
-- NOTE: 
-    - ClientKey: Either will be HealthCare Unit GUID  value (healthcareunits.js) or Patient GUID value (patients.json)
-    - Username & Password: any JWT user from appsettings.json
+    - NOTE: 
+        - ClientKey: Patient GUID value (patients.json)
+        - Username & Password: Patient User from appsettings.json
+
+- Test Patient API:
+    - Expand the Patient controller, and then expand "/v{version}/patient/get-patient-info/{PatientID}" end point
+    - Click the button "Try it Out", it will allow you to enter the params
+    - Enter value 658975 in PatientId textbox and value 1 in Version* textbox
+    - Click on execute button
 
 ---
 
@@ -110,18 +116,27 @@ https://localhost:{port}/swagger/index.html
 ├── Program.cs           # Entry point with middleware pipeline
 
 ```
+
+## Live Demo Link
+
+- **URL**: [WebAPI Demo](https://healthcare-webapi.azurewebsites.net/swagger/index.html)
+- **ClientKey**: b1c2d3e4-f5a6-7b8c-9d0e-f1a2b3c4d5e6 
+- **Username**: User1
+- **Password**: User1Password 
+- **PatientID**: 658975 
+
 ---
 
 ## 📘 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE.txt) file for details.
 
----
+
 
 ## Starred
 If you find this project useful, please consider supporting us by giving a star on GitHub! ⭐
 
----
+
 
 ## 🌱 Help Us Grow!
-Please help us grow by sharing it with your friends, family, and colleagues!
+Please help us grow by sharing it with your friends, and colleagues!
