@@ -117,14 +117,6 @@ https://localhost:{port}/swagger/index.html
 
 ```
 
-## Live Demo Link
-
-- **URL**: [WebAPI Demo](https://healthcare-webapi.azurewebsites.net/swagger/index.html)
-- **ClientKey**: b1c2d3e4-f5a6-7b8c-9d0e-f1a2b3c4d5e6 
-- **Username**: User1
-- **Password**: User1Password 
-- **PatientID**: 658975 
-
 ---
 
 ## 📘 License
